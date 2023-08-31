@@ -48,6 +48,5 @@ with col2:
         output = ', '.join(genre_result)
         if 'Romance' in genre_result:
             output += ' ❤️'
-        st.write(output)
         st.markdown(f'<p class="big-font">{output}</p>', unsafe_allow_html=True)
         st.balloons()
