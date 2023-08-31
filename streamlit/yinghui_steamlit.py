@@ -15,7 +15,7 @@ api_url = "https://movie-genre-prediction-2-osp24vwspq-an.a.run.app/predict/"
 st.markdown("""
 <style>
 .big-font {
-    font-size:80px !important;
+    font-size:70px !important;
 }
 </style>
 """, unsafe_allow_html=True)
