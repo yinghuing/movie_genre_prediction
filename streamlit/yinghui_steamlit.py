@@ -10,7 +10,6 @@ import requests
 import io
 
 
-api_url_image = "https://movie-genre-prediction-osp24vwspq-an.a.run.app/image_predict/"
 api_url = "https://movie-genre-prediction-2-osp24vwspq-an.a.run.app/predict/"
 
 
@@ -43,4 +42,5 @@ with col2:
         if 'Romance' in genre_result:
             output += ' :heart:'
         st.write(output)
+        st.write('<p class="big-font">{output}</p>', unsafe_allow_html=True)
         st.balloons()
