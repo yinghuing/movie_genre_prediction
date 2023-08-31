@@ -47,7 +47,7 @@ with col2:
         genre_result = response.json()["prediction"]
         output = ', '.join(genre_result)
         if 'Romance' in genre_result:
-            output += ' :heart:'
+            output += ' ❤️'
         st.write(output)
         st.markdown(f'<p class="big-font">{output}</p>', unsafe_allow_html=True)
         st.balloons()
