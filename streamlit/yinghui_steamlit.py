@@ -42,5 +42,5 @@ with col2:
         if 'Romance' in genre_result:
             output += ' :heart:'
         st.write(output)
-        st.write('<p class="big-font">{output}</p>', unsafe_allow_html=True)
+        st.markdown('<p class="big-font">{output}</p>', unsafe_allow_html=True)
         st.balloons()
