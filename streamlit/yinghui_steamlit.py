@@ -12,6 +12,15 @@ import io
 
 api_url = "https://movie-genre-prediction-2-osp24vwspq-an.a.run.app/predict/"
 
+st.set_page_config(layout="wide")
+
+st.markdown("""
+<style>
+.big-font {
+    font-size:300px !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown("""# Movie Genre Predictor :movie_camera:
 """)
@@ -42,5 +51,5 @@ with col2:
         if 'Romance' in genre_result:
             output += ' :heart:'
         st.write(output)
-        st.markdown('<p class="big-font">{output}</p>', unsafe_allow_html=True)
+        st.markdown(f'<p class="big-font">{output}</p>', unsafe_allow_html=True)
         st.balloons()
